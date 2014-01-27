@@ -1,21 +1,20 @@
-## Laravel PHP Framework
+## phpdemo app
 
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/version.png)](https://packagist.org/packages/laravel/framework) [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.png)](https://packagist.org/packages/laravel/framework) [![Build Status](https://travis-ci.org/laravel/framework.png)](https://travis-ci.org/laravel/framework)
+This php app is using the Laravel framework, written over a busy weekend. I'll probably continue to tinker with it over time.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+This is intended to be the beginning of a web app for grading. There are four roles: Teacher, Student, Parent, and Admin. There are Courses and there are Grades. A Course has one Teacher and many Students. A Parent has many Students and vice versa. A Grade maps a Student to a Course and has a value.
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+There's supposed to be a dashboard to let people see grades for the students they are supposed to have access to. I haven't had time for that yet. There's a lot here I haven't had time for yet.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+You will very likely to need to ensure app/storage has the most liberal permissions possible - 'chmod 777 app/storage' should take care of it.
 
-## Official Documentation
+You will need a database named 'phpdemo' and a db user named 'root' with no password. If this isn't possible, please edit app/config/database.php to reflect the appropriate values. To set up the database, type 'php artisan migrate' followed by 'php artisan db:seed'.
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
 
-### Contributing To Laravel
+### Contributing To phpdemo
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+**All issues and pull requests should be filed on the [afstanton/phpdemo](http://github.com/afstanton/phpdemo) repository.**
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The 'phpdemo' web grading app is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
