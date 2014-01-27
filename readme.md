@@ -6,6 +6,8 @@ This is intended to be the beginning of a web app for grading. There are four ro
 
 There's supposed to be a dashboard to let people see grades for the students they are supposed to have access to. I haven't had time for that yet. There's a lot here I haven't had time for yet.
 
+You need to have [Composer](https://getcomposer.org/) set up, preferably globally. Then, in the base directory of this app, you will need to do 'composer install' to pull in the external dependencies for this app. It will put them in 'vendor', which does not exist in this repository because it is expected that you'll use composer to pull them in properly.
+
 You will very likely to need to ensure app/storage has the most liberal permissions possible - 'chmod 777 app/storage' should take care of it.
 
 You will need a database named 'phpdemo' and a db user named 'root' with no password. If this isn't possible, please edit app/config/database.php to reflect the appropriate values. To set up the database, type 'php artisan migrate' followed by 'php artisan db:seed'.
